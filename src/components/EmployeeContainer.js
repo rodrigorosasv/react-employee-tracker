@@ -69,7 +69,7 @@ export default class EmployeeContainter extends React.Component {
           <div>Search here: <input value={filter} onChange={this.handleChange} /></div>
         
         <Titles />
-        {employees.filter(name=>name.name.first.includes(filter)).map(filteredEmployee => (
+        {employees.filter(name=>name.name.first.includes(filter)||name.name.last.includes(filter)||name.email.includes(filter)||name.phone.includes(filter)||name.dob.date.includes(filter)).map(filteredEmployee => (
           <div className="row">
                   <div className="col-2">
                     <img alt={filteredEmployee.name.first} src={filteredEmployee.picture.large} />
@@ -86,7 +86,6 @@ export default class EmployeeContainter extends React.Component {
                   <div className="col-2">
                     {filteredEmployee.dob.date.substring(0,10)}
                   </div>
-            {filteredEmployee.email}
           </div>
         ))}
         </Container>
