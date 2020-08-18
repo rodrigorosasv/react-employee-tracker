@@ -2,13 +2,13 @@
 import React from 'react';
 import axios from 'axios';
 import Container from "./Container";
-import SearchForm from "./SearchForm";
+// import SearchForm from "./SearchForm";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import EmployeeDetail from "./EmployeeDetail";
-import API from "../utils/API";
+// import EmployeeDetail from "./EmployeeDetail";
+// import API from "../utils/API";
 import Titles from "./Titles";
-import Row from "./Row";
+// import Row from "./Row";
 
 // function filterItems(query, employees) {
 //   return employees.filter(function(el) {
